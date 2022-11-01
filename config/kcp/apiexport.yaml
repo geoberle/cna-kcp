@@ -1,0 +1,8 @@
+apiVersion: apis.kcp.dev/v1alpha1
+kind: APIExport
+metadata:
+  name: cna.managed.openshift.io
+spec:
+  latestResourceSchemas:
+    - today.rdsinstances.cna.managed.openshift.io
+

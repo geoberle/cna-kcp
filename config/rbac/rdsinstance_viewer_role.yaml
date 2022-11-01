@@ -1,0 +1,20 @@
+# permissions for end users to view rdsinstances.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: rdsinstance-viewer-role
+rules:
+- apiGroups:
+  - cna.managed.openshift.io
+  resources:
+  - rdsinstances
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - cna.managed.openshift.io
+  resources:
+  - rdsinstances/status
+  verbs:
+  - get

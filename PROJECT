@@ -1,0 +1,16 @@
+domain: managed.openshift.io
+layout:
+- go.kubebuilder.io/v3
+projectName: cna-kcp
+repo: github.com/geoberle/cna-kcp
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: managed.openshift.io
+  group: cna
+  kind: RDSInstance
+  path: github.com/geoberle/cna-kcp/api/v1alpha1
+  version: v1alpha1
+version: "3"
